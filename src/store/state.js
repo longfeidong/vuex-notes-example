@@ -6,8 +6,5 @@
 //     console.log(collection)
 //   })
 export default {
-  entities: [
-    {body: '腊月初七'},
-    {body: '腊月初八'}
-  ]
+  entities: []
 }

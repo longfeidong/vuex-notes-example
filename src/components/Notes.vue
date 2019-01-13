@@ -20,12 +20,20 @@
 
 <script>
 import Note from './Note'
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 
 export default {
   name: 'Notes',
   components: {
     Note
+  },
+  created () {
+    this.initial()
+  },
+  methods: {
+    ...mapActions([
+      'initial'
+    ])
   },
   computed: {
     // 将vuex getters中的entities属性，映射到computed中
